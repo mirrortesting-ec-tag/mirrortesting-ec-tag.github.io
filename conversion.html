@@ -4,9 +4,12 @@
 <head>
 <!-- Enhanced conversion implement -->
 <script>
-var enhanced_conversion_data = {
-"email": "yangshasha910@gmail.com"
-};
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  var enhanced_conversion_data = {
+    "email": urlParams.get('email')
+  };
+  console.log(enhanced_conversion_data);
 </script>
 <!-- Global site tag (gtag.js) - Google Ads: 448812149 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-448812149"></script>
