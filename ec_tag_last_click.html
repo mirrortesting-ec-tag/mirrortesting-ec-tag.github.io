@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+<!-- Enhanced conversion implement -->
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  var enhanced_conversion_data = {
+    "email": urlParams.get('email')
+  };
+  console.log(enhanced_conversion_data);
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 448812149 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-448812149"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-448812149', {'allow_enhanced_conversions':true});
+</script>
+<!-- Event snippet for 32-bit Purchase EC Tag - Last click conversion page -->
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  gtag('event', 'conversion', {
+      'send_to': 'AW-448812149/X0W6CNvWh_YCEPWogdYB',
+      'transaction_id': urlParams.get('transaction_id') || Date.now(),
+  });
+</script>
+</head>
+
+<title>Conversion</title>
+<p> Conversion </p>
