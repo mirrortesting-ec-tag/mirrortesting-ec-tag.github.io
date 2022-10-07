@@ -22,8 +22,6 @@
 </script>
 <!-- Event snippet for 64bit EC tag purchase conversion page -->
 <script>
-  const queryString = window.location.search;
-  const urlParams = new URLSearchParams(queryString);
   gtag('event', 'conversion', {
       'send_to': 'AW-448812149/0b3tCMOAgIAYEPWogdYB',
       'transaction_id': urlParams.get('transaction_id') || Date.now()
